@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Bar Rosso 27</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">BAR <span style="color:var(--rosso-ferrari)">ROSSO</span> 27</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="menu.html" class="nav-btn active">Menu</a>
+        </div>
+    </nav>
+
+    <div class="menu-container">
+        <h1 class="numero-27" style="text-align: center; margin-bottom: 20px;">Menu</h1>
+        
+        <h2 class="categoria">Caffetteria</h2>
+        <div class="item"><span>Espresso</span> <span class="prezzo">1,20€</span></div>
+        <div class="item"><span>Cappuccino</span> <span class="prezzo">1,50€</span></div>
+
+        <h2 class="categoria">Dalla Cantina</h2>
+        <div class="item"><span>Inferno Valtellina Superiore</span> <span class="prezzo">5,00€</span></div>
+        <div class="item"><span>Franciacorta Docg</span> <span class="prezzo">7,00€</span></div>
+
+        <h2 class="categoria">Cocktail</h2>
+        <div class="item"><span>Negroni del 27</span> <span class="prezzo">8,00€</span></div>
+        <div class="item"><span>Spritz Classico</span> <span class="prezzo">6,00€</span></div>
+
+        <footer style="margin-top: 50px; border-top: 1px solid #ddd; padding-top: 20px;">
+            <p style="font-size: 0.7rem; color: #666; font-style: italic;">
+                * Informazioni sugli allergeni: I nostri prodotti possono contenere sostanze che provocano allergie o intolleranze. Il personale è a disposizione per consultare il registro degli allergeni.
+            </p>
+        </footer>
+    </div>
+
+    <div class="print-only">
+        <h1 style="color:black; font-family: Arial;">BAR ROSSO 27</h1>
+        <p style="color:black;">Inquadra per il menu digitale</p>
+        <img id="qr-image" class="qr-code" src="" alt="QR Code">
+    </div>
+
+    <script>
+        // Genera il QR Code automaticamente per l'URL corrente
+        const currentUrl = window.location.href;
+        const qrImg = document.getElementById('qr-image');
+        qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(currentUrl)}`;
+    </script>
+</body>
+</html>

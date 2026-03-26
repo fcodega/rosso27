@@ -4,80 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar Rosso 27 | Sondrio</title>
-    <style>
-        :root {
-            --rosso-ferrari: #CC0000;
-            --crema: #FFFDD0;
-            --legno: #3D2B1F;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--crema);
-            color: var(--legno);
-        }
-
-        header {
-            background-color: var(--legno);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 5px solid var(--rosso-ferrari);
-        }
-
-        .hero {
-            height: 60vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/hero-bar.jpg');
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-
-        .numero-27 {
-            font-size: 80px;
-            font-weight: bold;
-            font-style: italic;
-            color: var(--rosso-ferrari);
-            text-shadow: 2px 2px 0px #fff;
-        }
-
-        .btn-ordine {
-            background-color: var(--rosso-ferrari);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: transform 0.3s;
-        }
-
-        .btn-ordine:hover {
-            transform: scale(1.1);
-        }
-
-        .info-section {
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: auto;
-            line-height: 1.6;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <nav>
         <div class="logo">BAR <span style="color:var(--rosso-ferrari)">ROSSO</span> 27</div>
-    </header>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn active">Home</a>
+            <a href="menu.html" class="nav-btn">Menu</a>
+        </div>
+    </nav>
 
     <section class="hero">
         <div class="numero-27">27</div>
         <h1>Passione Valtellinese, Animo Racing.</h1>
-        <a href="#menu" class="btn-ordine">Vedi il Menu</a>
+        <a href="menu.html" class="btn-ordine">Vedi il Menu</a>
     </section>
 
     <section class="info-section">
