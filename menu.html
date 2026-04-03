@@ -20,32 +20,90 @@
         <h1 class="numero-27" style="text-align: center; margin-bottom: 20px;">Menu</h1>
         
         <h2 class="categoria">Caffetteria</h2>
-        <div class="item"><span>Espresso</span> <span class="prezzo">1,20€</span></div>
-        <div class="item"><span>Cappuccino</span> <span class="prezzo">1,50€</span></div>
+        <div class="item">
+            <div class="item-header"><span>Espresso</span> <span class="prezzo">1,20€</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Caffè Americano</span> <span class="prezzo">1,40€</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Cappuccino</span> <span class="prezzo">1,60€</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Caffè Corretto</span> <span class="prezzo">1,80€</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Brioches Artigianali</span> <span class="prezzo">1,30€</span></div>
+            <span class="descrizione">Vari gusti: crema, cioccolato, marmellata, vuota</span>
+        </div>
 
-        <h2 class="categoria">Dalla Cantina</h2>
-        <div class="item"><span>Inferno Valtellina Superiore</span> <span class="prezzo">5,00€</span></div>
-        <div class="item"><span>Franciacorta Docg</span> <span class="prezzo">7,00€</span></div>
+        <h2 class="categoria">Bevande</h2>
+        <div class="item">
+            <div class="item-header"><span>Spremuta d'Arancia Fresca</span> <span class="prezzo">3,50€</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Succhi di Frutta</span> <span class="prezzo">2,50€</span></div>
+            <span class="descrizione">Pera, Pesca, Albicocca, Ace</span>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Acqua Minerale 0.5L</span> <span class="prezzo">1,00€</span></div>
+            <span class="descrizione">Naturale o Frizzante</span>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>The Freddo</span> <span class="prezzo">3,00€</span></div>
+            <span class="descrizione">Limone o Pesca</span>
+        </div>
 
-        <h2 class="categoria">Cocktail</h2>
-        <div class="item"><span>Negroni del 27</span> <span class="prezzo">8,00€</span></div>
-        <div class="item"><span>Spritz Classico</span> <span class="prezzo">6,00€</span></div>
+        <h2 class="categoria">Tavola Calda</h2>
+        <div class="item">
+            <div class="item-header"><span>Piadina "Gilles 27"</span> <span class="prezzo">6,50€</span></div>
+            <span class="descrizione">Bresaola della Valtellina, rucola, scaglie di grana e olio al limone</span>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Piadina "Pole Position"</span> <span class="prezzo">6,00€</span></div>
+            <span class="descrizione">Prosciutto crudo, mozzarella fior di latte e pomodori a fette</span>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Panino "Gran Premio"</span> <span class="prezzo">5,50€</span></div>
+            <span class="descrizione">Salame nostrano, formaggio Casera e crema di carciofi</span>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Panino "Pit Stop" (Veg)</span> <span class="prezzo">5,50€</span></div>
+            <span class="descrizione">Verdure grigliate, scamorza affumicata e pesto leggero</span>
+        </div>
+
+        <h2 class="categoria">Aperitivi & Cocktail</h2>
+        <div class="item">
+            <div class="item-header"><span>Spritz Rosso 27</span> <span class="prezzo">6,00€</span></div>
+            <span class="descrizione">Aperol o Campari, Prosecco, Soda e seltz</span>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Negroni Sbagliato</span> <span class="prezzo">7,00€</span></div>
+            <span class="descrizione">Vermouth Rosso, Campari, Prosecco</span>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Americano "Villeneuve"</span> <span class="prezzo">7,00€</span></div>
+            <span class="descrizione">Il classico con un tocco di bitter artigianale</span>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Gin Tonic / Lemon</span> <span class="prezzo">8,00€</span></div>
+            <span class="descrizione">Selezione di Gin Premium e Toniche Dry</span>
+        </div>
 
         <footer style="margin-top: 50px; border-top: 1px solid #ddd; padding-top: 20px;">
             <p style="font-size: 0.7rem; color: #666; font-style: italic;">
-                * Informazioni sugli allergeni: I nostri prodotti possono contenere sostanze che provocano allergie o intolleranze. Il personale è a disposizione per consultare il registro degli allergeni.
+                * Informazioni sugli allergeni: I nostri prodotti possono contenere sostanze che provocano allergie o intolleranze. Il personale è a disposizione per consultare il registro degli allergeni aggiornato.
             </p>
         </footer>
     </div>
 
     <div class="print-only">
-        <h1 style="color:black; font-family: Arial;">BAR ROSSO 27</h1>
-        <p style="color:black;">Inquadra per il menu digitale</p>
-        <img id="qr-image" class="qr-code" src="" alt="QR Code">
+        <h1 style="color:black; font-family: Arial; font-weight: bold;">BAR ROSSO 27</h1>
+        <p style="color:black; margin-top: 10px;">Inquadra per il menu digitale</p>
+        <img id="qr-image" class="qr-code" src="" alt="QR Code" style="margin-top: 30px;">
     </div>
 
     <script>
-        // Genera il QR Code automaticamente per l'URL corrente
         const currentUrl = window.location.href;
         const qrImg = document.getElementById('qr-image');
         qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(currentUrl)}`;
